@@ -7,7 +7,8 @@ import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
 import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
 import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 
-function Post({ name, description, message, photoUrl }) {
+function PostCard({ name, description, message, photoUrl }) {
+    { console.log('post is called ', message) }
     return (
         <div className="post">
             <div className="post__header">
@@ -32,4 +33,4 @@ function Post({ name, description, message, photoUrl }) {
     )
 }
 
-export default Post
+export default PostCard
